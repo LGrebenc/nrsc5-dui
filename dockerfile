@@ -24,3 +24,5 @@ git \
 && make \
 && make install \
 && ldconfig
+
+CMD [ "python", "nrsc5-dui.py" ]
