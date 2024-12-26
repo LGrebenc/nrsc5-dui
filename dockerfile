@@ -6,7 +6,7 @@ COPY . .
 
 RUN apt update \
 && apt install -y \ 
-git \
+    git \
     build-essential \
     cmake \
     autoconf \
