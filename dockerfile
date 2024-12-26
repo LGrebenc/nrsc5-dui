@@ -17,4 +17,10 @@ git \
     libgirepository1.0-dev \
     libgtk-3-dev \
 && pip install -r requirements.txt \
+&& git clone https://github.com/theori-io/nrsc5.git \
+&& cd nrsc5 \
+&& mkdir build \
+&& cmake -DLIBRARY_DEBUG_LEVEL=1 \
+&& make \
+&& make install \
 && ldconfig
